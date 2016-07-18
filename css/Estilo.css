@@ -1,0 +1,912 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+background-color:#000;
+font-family: Arial,Verdana, sans-serif;
+font-size:14px;
+}
+
+#Santillana_present{
+width: 983px;
+height: 690px;
+position: relative;
+overflow: hidden;
+background: #000;
+margin: 0 auto 0 auto;
+}
+
+
+
+.escena
+{
+	width:983px;
+	height:690px;
+	position:absolute;
+	margin: 0 auto 0 auto;
+	background: #000;
+	display:none;
+}
+
+.fondo
+{
+	width:983px;
+	height:690px;
+	position:absolute;
+	margin: 0 auto 0 auto;
+}
+
+.titulo
+{
+	width:512px;
+	height:213px;
+	position:absolute;
+	top:-226px;
+	left:22px;
+	background-repeat:no-repeat;
+}
+
+.anterior
+{
+	width: 127px;
+	height: 157px;
+	position: absolute;
+	background-image: url(../img/anterior.png);
+	background-repeat: no-repeat;
+	background-position: -30px 0px;
+	cursor: pointer;
+	top: -23px;
+	left: 685px;
+}
+
+.anterior:hover
+{
+	background-position: -30px -170px;
+}
+
+
+
+.siguiente
+{
+	width: 128px;
+	height: 148px;
+	position: absolute;
+	background-image: url(../img/siguiente.png);
+	background-repeat: no-repeat;
+	background-position: -47px 0px;
+	cursor: pointer;
+	top: -24px;
+	left: 832px;
+}
+
+.siguiente:hover
+{
+	background-position: -47px -170px;
+}
+
+.inicio
+{
+width: 140px;
+height: 157px;
+position: absolute;
+background-image: url(../img/inicio.png);
+background-repeat: no-repeat;
+background-position: -32px -26px;
+cursor: pointer;
+top: 1px;
+left: 10px;
+}
+
+.inicio:hover
+{
+	background-position: -32px -245px;
+}
+/***********************/
+/*    ANIM INTRO       */
+/***********************/
+#intro{
+	width:983px;
+	height:690px;
+	display:none;
+	background-image:url(../img/intro.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	margin:0px 0px;
+	background-color:#fff;
+}
+
+
+/***********************/
+/*      CARATULA       */
+/***********************/
+#caratula
+{
+	background-image:url(../img/caratula/fondo.png);
+}
+
+#titulo_caratula
+{
+	width:614px;
+	height:261px;
+	background-repeat:no-repeat;
+	background-image:url(../img/caratula/titulo.svg);
+	position:absolute;
+	top:-273px;
+	left:401px;
+}
+
+#ciclo_caratula
+{
+	width:424px;
+	height:442px;
+	background-repeat:no-repeat;
+	background-image:url(../img/caratula/ciclo.svg);
+	position:absolute;
+	top:77px;
+	left:34px;
+	display:none;
+}
+
+#foco_caratula
+{
+	width:173px;
+	height:243px;
+	background-repeat:no-repeat;
+	background-image:url(../img/caratula/foco_ahorrador.png);
+	position:absolute;
+	top:196px;
+	left:155px;
+	background-position: -30px -17px;
+	display:none;
+}
+
+.boton
+{
+	width:230px;
+	height:91px;
+	position:absolute;
+	left:645px;
+	display:none;
+}
+
+
+.enlace
+{
+	cursor:pointer;
+	display:none;
+}
+
+#enlace1
+{
+	width: 189px;
+	height: 67px;
+	position: absolute;
+	left:652px;
+	top:230px;
+}
+
+#enlace2
+{
+	width: 169px;
+	height: 65px;
+	position: absolute;
+	left: 690px;
+	top: 309px;
+}
+
+#enlace3
+{
+	width: 137px;
+	height: 65px;
+	position: absolute;
+	left: 647px;
+	top: 382px;
+}
+
+#enlace4
+{
+	width: 167px;
+	height: 65px;
+	position: absolute;
+	left: 693px;
+	top: 458px;
+}
+
+#enlace5
+{
+	width: 172px;
+	height: 65px;
+	position: absolute;
+	left: 650px;
+	top: 529px;
+}
+
+#enlace6
+{
+	width: 197px;
+	height: 65px;
+	position: absolute;
+	left: 693px;
+	top: 606px;
+}
+
+#boton1
+{
+	top:220px;
+}
+
+#boton2
+{
+	top:296px;
+}
+
+#boton3
+{
+	top:371px;
+}
+#boton4
+{
+	top:444px;
+}
+
+#boton5
+{
+	top:518px;
+}
+
+#boton6
+{
+	top:593px;
+}
+
+#img1
+{
+	background-image:url(../img/caratula/btn_introduccion.png);
+	position:absolute;
+	background-position:-40px -8px;
+	width:230px;
+	height:91px;
+	top:0px;
+	left:0px;
+}
+
+#img2
+{
+	background-image:url(../img/caratula/btn_tarea.png);
+	position:absolute;
+	background-position:30px -6px;
+	width:230px;
+	height:91px;
+	top:0px;
+	left:0px;
+}
+
+#img3
+{
+	background-image:url(../img/caratula/btn_proceso.png);
+	position:absolute;
+	background-position:-44px -8px;
+	width:180px;
+	height:91px;
+	top:0px;
+	left:0px;
+}
+
+#img4
+{
+	background-image:url(../img/caratula/btn_recursos.png);
+	position:absolute;
+	background-position:34px -5px;
+	width:230px;
+	height:91px;
+	top:0px;
+	left:0px;
+}
+
+#img5
+{
+	background-image:url(../img/caratula/btn_evaluacion.png);
+	position:absolute;
+	background-position:-40px -8px;
+	width:230px;
+	height:91px;
+	top:0px;
+	left:0px;
+}
+
+#img6
+{
+	background-image: url(../img/caratula/btn_conclusion.png);
+	position: absolute;
+	background-position: 29px -7px;
+	width: 270px;
+	height: 91px;
+	top: 1px;
+	left: -3px;
+}
+
+/***********************/
+/*    INTRODUCCION     */
+/***********************/
+
+#escena1
+{
+	background-image:url(../img/introduccion/fondo.png);
+}
+#titulo1
+{
+background-image:url(../img/introduccion/titulo.svg);
+}
+#texto1
+{
+	position: relative;
+	top: 223px;
+	left: 990px;
+	font-size: 18px;
+}
+
+#elices
+{
+	position:absolute;
+	background-image:url(../img/introduccion/elices1.png);
+	top: 411px;
+	left: 110px;
+	background-repeat:no-repeat;
+	width:620px;
+	height:417px;
+}
+
+
+#elices1
+{
+	position:absolute;
+	background-image:url(../img/introduccion/elices2.png);
+	top: 194px;
+	left: 160px;
+	background-repeat:no-repeat;
+	width:450px;
+	height:450px;
+}
+
+#elices2
+{
+	position:absolute;
+	background-image:url(../img/introduccion/elices3.png);
+	top: 194px;
+	left: 160px;
+	background-repeat:no-repeat;
+	width:450px;
+	height:450px;
+}
+/***********************/
+/*        TAREA        */
+/***********************/
+#escena2
+{
+	background-image:url(../img/tarea/fondo.png);
+}
+#titulo2
+{
+background-image:url(../img/tarea/titulo.svg);
+}
+#texto2
+{
+	position: relative;
+	top: 247px;
+	left: -460px;
+	font-size: 18px;
+}
+
+#solario
+{
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image:url(../img/tarea/solario2.svg);
+	width: 881px;
+	height: 279px;
+	top: 380px;
+	left: 66px;
+	display:none;
+}
+#solario2
+{
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(../img/tarea/solario1.svg);
+	width: 881px;
+	height: 279px;
+	top: 380px;
+	left: 66px;
+}
+
+#sol
+{
+position: absolute;
+background-repeat: no-repeat;
+background-image: url(../img/tarea/sol.svg);
+width: 174px;
+height: 174px;
+top: 167px;
+left: 546px;
+display:none;
+}
+
+#nubes{
+	position:absolute;
+	background-repeat:no-repeat;
+	background-image:url(../img/tarea/nubes.svg);
+	width:885px;
+	height:174px;
+	position:absolute;
+	top:238px;
+	left:60px;
+	overflow:hidden;
+	margin: 0 auto 0 auto;
+	padding:0;
+	background-repeat:repeat-x;
+}
+/***********************/
+/*      PROCESO        */
+/***********************/
+#escena3
+{
+	background-image:url(../img/proceso/fondo.png);
+}
+
+#titulo3
+{
+background-image:url(../img/proceso/titulo.svg);
+}
+
+#texto3
+{
+	position: relative;
+	top: 233px;
+	left: -472px;
+	font-size: 16px;
+}
+
+
+
+
+#dl{  
+width: 401px;
+position: absolute;
+top: 178px;
+left: 1016px;
+} 
+
+dt, dd{ padding: 10px; } 
+
+dt{ background:#393; color: white; border-bottom: 1px solid #033; border-top: 1px solid #4E4E4E; cursor: pointer; font-size:18px;} 
+
+dd{ background:#FBE773; color:#000; border:#4E4E4E solid 1px; display: none; line-height: 1.6em; } 
+
+dt.activo, dt:hover{ background:#FF5; color:#000; } 
+
+dt:before{ content: "▸"; margin-right: 10px; } 
+dt.activo:before{ content: "▾"; } 
+
+#arboles
+{
+	background-image:url(../img/proceso/fondo3.svg);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:892px;
+	height:377px;
+	top: 285px;
+	left: 58px;
+}
+
+#titulo3_2
+{
+	background-image: url(../img/proceso/titulo2.svg);
+	width: 0px;
+	height: 60px;
+	position: absolute;
+	top: 126px;
+	left: 434px;
+	background-position: -6px -6px;
+	background-repeat: no-repeat;
+}
+
+#el1
+{
+	background-image:url(../img/proceso/el1.png);
+	width:40px;
+	height:40px;
+	position:absolute;
+	top: 428px;
+	left: 702px;
+}
+
+#el2
+{
+	background-image:url(../img/proceso/el2.png);
+	width:66px;
+	height:66px;
+	position:absolute;
+	top: 384px;
+	left: 733px;
+}
+
+#el3
+{
+	background-image:url(../img/proceso/el3.png);
+	width:150px;
+	height:150px;
+	position:absolute;
+	top: 284px;
+	left: 605px;
+}
+
+/***********************/
+/*      RECURSOS       */
+/***********************/
+#escena4
+{
+	background-image:url(../img/recursos/fondo.png);
+}
+#titulo4
+{
+background-image:url(../img/recursos/titulo.svg);
+}
+
+#represa_1
+{
+	background-image:url(../img/proceso/represa1.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_2
+{
+	background-image:url(../img/proceso/represa1_2.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_3
+{
+	background-image:url(../img/proceso/represa1_3.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_4
+{
+	background-image:url(../img/proceso/represa1_4.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_5
+{
+	background-image:url(../img/proceso/represa1_5.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_6
+{
+	background-image:url(../img/proceso/represa1_6.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+#represa_7
+{
+	background-image:url(../img/proceso/represa1_7.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+
+#lago
+{
+	background-image:url(../img/proceso/lago.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+
+
+#represa2
+{
+	background-image:url(../img/proceso/represa2.svg);
+	width:907px;
+	height:412px;
+	background-repeat:no-repeat;
+	top:245px;
+	left:38px;
+	position:absolute;
+}
+
+#link1
+{
+	background-image:url(../img/proceso/link1.png);
+	width:176px;
+	height:318px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:308px;
+	left:195px;
+	display:none;
+}
+
+#link2
+{
+	background-image:url(../img/proceso/link2.png);
+	width:180px;
+	height:283px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top: 316px;
+	left: 340px;
+	display:none;
+}
+
+#link3
+{
+	background-image:url(../img/proceso/link3.png);
+	width:149px;
+	height:255px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top: 321px;
+	left: 479px;
+	display:none;
+}
+
+#link4
+{
+	background-image:url(../img/proceso/link4.png);
+	width:135px;
+	height:233px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top: 320px;
+	left: 596px;
+	display:none;
+}
+
+#link5
+{
+	background-image:url(../img/proceso/link5.png);
+	width:121px;
+	height:207px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top: 324px;
+	left: 702px;
+	display:none;
+}
+
+#link6
+{
+	background-image:url(../img/proceso/link6.png);
+	width:120px;
+	height:184px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top: 328px;
+	left: 796px;
+	display:none;
+}
+
+#cuadro1
+{
+width: 99px;
+height: 314px;
+position: absolute;
+top: 300px;
+left: 217px;
+-moz-transform: rotate(-17deg);  /* Firefox */
+-o-transform: rotate(-17deg);  /* Opera */
+-webkit-transform: rotate(-17deg);  /* Safari y Chrome */
+cursor:pointer;
+}
+
+#cuadro2
+{
+width: 99px;
+height: 285px;
+position: absolute;
+top: 305px;
+left: 363px;
+-webkit-transform: rotate(-13deg);
+-moz-transform: rotate(-13deg);  /* Firefox */
+-o-transform: rotate(-13deg);  /* Opera */
+cursor:pointer;
+}
+
+#cuadro3
+{
+width: 75px;
+height: 244px;
+position: absolute;
+top: 312px;
+left: 502px;
+-webkit-transform: rotate(-15deg);
+-moz-transform: rotate(-15deg);  /* Firefox */
+-o-transform: rotate(-15deg);  /* Opera */
+cursor:pointer;
+}
+
+#cuadro4
+{
+width: 63px;
+height: 212px;
+position: absolute;
+top: 318px;
+left: 619px;
+-webkit-transform: rotate(-12deg);
+-moz-transform: rotate(-12deg);  /* Firefox */
+-o-transform: rotate(-12deg);  /* Opera */
+cursor:pointer;
+}
+
+#cuadro5
+{
+width: 66px;
+height: 193px;
+position: absolute;
+top: 318px;
+left: 718px;
+-webkit-transform: rotate(-12deg);
+-moz-transform: rotate(-12deg);  /* Firefox */
+-o-transform: rotate(-12deg);  /* Opera */
+cursor:pointer;
+}
+
+#cuadro6
+{
+width: 60px;
+height: 171px;
+position: absolute;
+top: 324px;
+left: 816px;
+-webkit-transform: rotate(-12deg);
+-moz-transform: rotate(-12deg);  /* Firefox */
+-o-transform: rotate(-12deg);  /* Opera */
+cursor:pointer;
+}
+/***********************/
+/*     EVALUACIÓN      */
+/***********************/
+#escena5
+{
+	background-image:url(../img/evaluacion/fondo.png);
+}
+#titulo5
+{
+background-image:url(../img/evaluacion/titulo.svg);
+background-repeat:no-repeat;
+}
+
+#texto5
+{
+	position: absolute;
+	top: 234px;
+	left: -832px;
+	font-size: 16px;
+}
+
+#tabla
+{
+	width:781px;
+	height:333px;
+	position:absolute;
+	top: 715px;
+	left: 113px;
+	background-image:url(../img/evaluacion/tabla2.png);
+	background-repeat:no-repeat;
+}
+
+.remolino
+{
+	width:145px;
+	height:145px;
+	position:absolute;
+	background-image:url(../img/evaluacion/elice.png);
+	background-repeat:no-repeat;
+}
+
+#remolino1
+{
+	top:20px;
+	left:-94px;
+}
+
+#remolino2
+{
+	top:202px;
+	left:-94px;
+}
+
+#remolino3
+{
+	top:197px;
+	left:719px;
+}
+
+#remolino4
+{
+	top:-17px;
+	left:719px;
+}
+/***********************/
+/*     CONCLUSIÓN      */
+/***********************/
+#escena6
+{
+	background-image:url(../img/conclusion/fondo.png);
+}
+#titulo6
+{
+background-image:url(../img/conclusion/titulo.svg);
+background-repeat:no-repeat;
+}
+
+#texto6
+{
+	position:absolute;
+	top:282px;
+	left:-416px;
+	font-size:18px;
+}
+
+#circulo
+{
+position: absolute;
+background-image:url(../img/conclusion/circulo.png);
+width: 428px;
+height: 428px;
+top: 165px;
+left: 529px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

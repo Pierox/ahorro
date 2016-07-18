@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+ <!--[if lt IE 9]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<link href="css/Estilo.css" rel="stylesheet" />
+<script src="js/jquery-1.9.0.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script src="js/jquery.spritely.js" type="text/javascript"></script>
+<script src="js/Introduccion.js" type="text/javascript"></script>
+<script src="js/rotate.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.10.3.custom.js" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+<audio id="sonido1">
+	<source src="sound/fondo2.mp3"></source>
+	<source src="sound/fondo2.ogg"></source>
+</audio>
+
+<audio id="sonido2">
+	<source src="sound/elect.mp3"></source>
+	<source src="sound/elect.ogg"></source>
+</audio>
+
+<audio id="sonido3">
+	<source src="sound/Pase_del_logo.mp3"></source>
+	<source src="sound/Pase_del_logo.ogg"></source>
+</audio>
+
+<audio id="sonido4">
+	<source src="sound/mezcla1.mp3"></source>
+	<source src="sound/mezcla1.ogg"></source>
+</audio>
+
+<audio id="sonido5">
+	<source src="sound/letrero.mp3"></source>
+	<source src="sound/letrero.ogg"></source>
+</audio>
+
+<audio id="sonido6">
+	<source src="sound/plip.mp3"></source>
+	<source src="sound/plip.ogg"></source>
+</audio>
+
+<audio id="sonido7">
+	<source src="sound/tin.mp3"></source>
+	<source src="sound/tin.ogg"></source>
+</audio>
+
+<audio id="sonido8">
+	<source src="sound/titulo.mp3"></source>
+	<source src="sound/titulo.ogg"></source>
+</audio>
+
+<audio id="sonido9">
+	<source src="sound/titulo2.mp3"></source>
+	<source src="sound/titulo2.ogg"></source>
+</audio>
+
+<audio id="sonido10">
+	<source src="sound/proceso.mp3"></source>
+	<source src="sound/proceso.ogg"></source>
+</audio>
+
+<audio id="sonido11">
+	<source src="sound/blanco.mp3"></source>
+	<source src="sound/blanco.ogg"></source>
+</audio>
+
+<audio id="sonido12">
+	<source src="sound/fin.mp3"></source>
+	<source src="sound/fin.ogg"></source>
+</audio>
+
+<audio id="sonido13">
+	<source src="sound/penultimo.mp3"></source>
+	<source src="sound/penultimo.ogg"></source>
+</audio>
+
+<audio id="sonido14">
+	<source src="sound/agua.mp3"></source>
+	<source src="sound/agua.ogg"></source>
+</audio>
+
+
+
+    <div id="Santillana_present">
+        	
+  		<div id="intro"></div>
+        
+        <!---------Caratula ---------------------------->
+        
+        <div id="caratula" class="escena">
+        
+        <div id="titulo_caratula"></div>
+		<div id="ciclo_caratula"></div>
+        <div id="foco_caratula"></div>
+            
+            <div id="boton1" class="boton">
+            <div id="img1" class="img"></div>
+            </div>
+            <div id="boton2" class="boton">
+            <div id="img2" class="img"></div>
+            </div>
+            <div id="boton3" class="boton">
+            <div id="img3" class="img"></div>
+            </div>
+            <div id="boton4" class="boton">
+            <div id="img4" class="img"></div>
+            </div>
+            <div id="boton5" class="boton">
+            <div id="img5" class="img"></div>
+            </div>
+            <div id="boton6" class="boton">
+            <div id="img6" class="img"></div>   
+        	</div>    
+        	
+            <div id="enlace1" class="enlace"></div>
+            <div id="enlace2" class="enlace"></div>
+            <div id="enlace3" class="enlace"></div>
+            <div id="enlace4" class="enlace"></div>
+            <div id="enlace5" class="enlace"></div>
+            <div id="enlace6" class="enlace"></div>
+        	
+            
+        </div>
+
+        <!--------- Fin de Caratula ---------------------------->
+        
+        
+        
+        <!------------------------------------------------------------->
+        <!------------------- INTROCUCCION ---------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena1" class="escena">    
+             <div id="titulo1" class="titulo"></div>
+             
+             <img id="e1" class="brillo" src="img/introduccion/elices2.png" style="width:20%; position:absolute; top:379px; left:20px;"/>
+             <img id="e2" class="brillo" src="img/introduccion/elices2.png" style="width:20%; position:absolute; top:359px; left:108px;"/>
+             <img id="e3" class="brillo" src="img/introduccion/elices2.png" style="width:20%; position:absolute; top:340px; left:182px;"/>
+             <img id="e4" class="brillo" src="img/introduccion/elices2.png" style="width:20%; position:absolute; top:367px; left:254px;"/>
+             <img id="e5" class="brillo" src="img/introduccion/elices2.png" style="width:20%; position:absolute; top:351px; left:329px;"/>
+             <img id="e6" class="brillo" src="img/introduccion/elices2.png" style="width:26%; position:absolute; top:384px; left:363px;"/>
+			<div id="elices1" class="brillo"></div>
+             <div id="elices"></div>
+             
+             
+             <div id="texto1">
+             La  energía eléctrica es un recurso muy importante  
+             <br>
+             para los seres humanos. Gracias a ella funcionan   
+             <br>
+             las fábricas, los electrodomésticos, la iluminación 
+             <br>
+             en las casas y calles durante la noche, entre otros.
+             <br>
+             <br>
+			 Sin embargo, producir este recurso es costoso    
+             <br>
+             y ocasiona impactos negativos en el medioambiente.   
+             <br>
+             Por eso, es necesario utilizarlo de manera racional.
+             </div>
+             
+            <div id="siguiente1" class="siguiente"></div>
+            <div id="anterior1" class="anterior"></div>
+            
+            <div id="inicio1" class="inicio"></div>
+        </div>
+        
+        <!------------------------------------------------------------->
+        <!------------------- FIN DE LA INTROCUCCION ------------------>
+        <!------------------------------------------------------------->
+        
+        
+        <!------------------------------------------------------------->
+        <!-------------------------- TAREA ---------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena2" class="escena">    
+           <div id="titulo2" class="titulo"></div>
+                      
+           
+           <img id="rayos_sol" src="img/tarea/sol.png" style="width:31%; position:absolute; top:97px; left:476px; display:none;"/> 
+           <div id="sol"></div>
+           
+           <div id="nubes"></div>
+           
+           <div id="texto2">
+           	El gobierno está preocupado por el constante 
+            <br>
+            aumento de la demanda de electricidad   
+            <br>
+            en nuestro país. Por ello, contrata a todo tu grupo 
+            <br>
+            para que evalúe la situación y proponga 
+            <br>
+            tres medidas fundamentales  a llevar a cabo   
+            <br>
+            en tu localidad, para promover el ahorro 
+            <br>
+            de la energía eléctrica.
+            <br>
+            <br>
+            Con la información obtenida, se elaborará un producto 
+            <br>
+            que será distribuido masivamente a todos los habitantes
+            <br>
+            (video, audio, afiche, cuento corto, etc.) para sensibilizarlos
+            <br>
+            acerca de la necesidad de este tipo de ahorro.  
+            <br>
+            
+
+           </div>
+			<div id="solario"></div>
+           <div id="solario2"></div>
+			
+           
+  
+  			
+            
+           <div id="siguiente2" class="siguiente"></div>
+           <div id="anterior2" class="anterior"></div>
+            
+           <div id="inicio2" class="inicio"></div>
+        </div>
+        
+        <!------------------------------------------------------------->
+        <!------------------- FIN DE LA TAREA  ------------------------>
+        <!------------------------------------------------------------->
+        
+        
+        <!------------------------------------------------------------->
+        <!------------------------ PROCESO ---------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena3" class="escena"> 
+        	<div id="el2" class="brillo"></div>
+        	<div id="arboles"></div>
+            <div id="el1" class="brillo"></div>
+            <div id="el3" class="brillo"></div>
+            
+            <div id="titulo3_2"></div> 
+          <div id="titulo3" class="titulo"></div>
+          <div id="texto3">
+     
+          1. Formen grupos de seis estudiantes.
+          <br>
+          <br>
+          2. Dividan el grupo en dos equipos: los especialistas  
+          <br>
+          <b style="opacity:0;">1.</b> en ahorro energético y los expertos comunicadores. 
+          <br>
+          <br>
+          3. Cada equipo se reunirá para determinar cómo organizará 
+          <br>
+          <b style="opacity:0;">1.</b> su trabajo y con qué herramientas cuenta para hacerlo. 
+          <br>
+          <b style="opacity:0;">1.</b> Todos los participantes colaborarán con las tareas  
+          <br>
+          <b style="opacity:0;">1.</b> del grupo.  
+          <br>
+          <br>
+          4. Luego de concluir el trabajo en cada grupo, el producto 
+          <br>
+          <b style="opacity:0;">1.</b> será presentado  al resto de la clase y al profesor, 
+          <br>
+          <b style="opacity:0;">1.</b> justificando los motivos de sus elecciones. 
+          <br>
+          <br>
+          5. Los diversos productos serán evaluados de acuerdo 
+          <br>
+          <b style="opacity:0;">1.</b> a una cartilla  de calificación. De ser posible, los mejores
+          <br>
+          <b style="opacity:0;">1.</b> trabajos serán presentados a la localidad.
+     
+          </div>
+          
+
+                <dl id="dl"> 
+                  <dt>Especialistas en ahorro energético</dt> 
+                  <dd>
+                  Son los encargados de hacer un diagnóstico 
+                  <br>
+                  de la situación energética de su localidad 
+                  <br>
+                  que incluya: 
+                  <br>
+                  <ul>
+                      <li>Fuentes de energía.</li>
+                      <li>Usos más frecuentes.</li>
+                      <li>Hábitos de consumo en la población, etc.</li>
+                   </ul>
+                   Además, deberán recopilar información referente 
+                   <br>
+                   a las formas más eficientes de ahorrar energía 
+                   <br>
+                   eléctrica.
+                   <br>
+                   Cuando cuenten con toda la información  
+                   <br>
+                   necesaria, se reunirán con todo el grupo  
+                   <br>
+                   para determinar cuáles son las tres medidas  
+                   <br>
+                   fundamentales en los que se basará su producto.  
+                  </dd> 
+                  
+                  <dt>Expertos comunicadores</dt> 
+                  <dd>
+                  Son los encargados de evaluar qué estrategia 
+                  <br>
+                  es la más conveniente para sensibilizar 
+                  <br>
+                  a la población. Entre ellas tenemos:
+                  <br>
+                  <ul>
+                      <li>Video difundido a través de la televisión <br> o internet. </li>
+                      <li>Audio difundido a través de la radio o internet.</li>
+                      <li>Grupo de interés en las redes sociales.</li>
+                      <li>Afiche difundido en forma física o virtual.</li>
+                      <li>Historieta o cuento corto difundido en forma física o virtual.</li>
+                   </ul>
+				  Luego, se reunirán con todo el grupo para elegir 
+                  <br>
+                  la estrategia que consideren más efectiva 
+                  <br>
+                  y planificarán su realización. 
+                  <br>
+                  Todos los participantes del grupo brindarán 
+                  <br>
+                  su colaboración.
+
+                  </dd> 
+                </dl> 
+               
+            <div id="siguiente3" class="siguiente"></div>
+            <div id="anterior3" class="anterior"></div> 
+            
+            <div id="inicio3" class="inicio"></div>
+        </div>
+   
+        <!------------------------------------------------------------->
+        <!------------------- FIN DEL PROCESO  ------------------------>
+        <!------------------------------------------------------------->
+        
+        
+        <!------------------------------------------------------------->
+        <!----------------------- RECURSOS ---------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena4" class="escena"> 
+            <div id="titulo4" class="titulo"></div>    
+            <div id="lago"></div>
+            <div id="represa2"></div>
+            <div id="represa_7"></div>
+            <div id="link6" class="link"></div>
+            <div id="represa_6"></div>
+            <div id="link5" class="link"></div>
+            <div id="represa_5"></div>
+            <div id="link4" class="link"></div>
+            <div id="represa_4"></div>
+            <div id="link3" class="link"></div>
+            <div id="represa_3"></div>
+            <div id="link2" class="link"></div>
+            <div id="represa_2"></div>
+     		<div id="link1" class="link"></div>
+            <div id="represa_1"></div>
+            
+            
+            <div id="texto_recursos" style="position:absolute; top:169px; left:463px; font-size:18px;">
+            Las siguientes páginas de internet te mostrarán información 
+            <br>
+            diversa sobre el ahorro de energía:
+            </div>
+            
+            <img id="uno" src="img/recursos/enlace1.svg" style="position:absolute; top:250px; left:202px; width:7%;"/>
+            <img id="dos" src="img/recursos/enlace2.svg" style="position:absolute; top:255px; left:345px; width:7%;"/>
+            <img id="tres" src="img/recursos/enlace3.svg" style="position:absolute; top:261px; left:478px; width:7%;"/>
+            <img id="cuatro" src="img/recursos/enlace4.svg" style="position:absolute; top:268px; left:595px; width:7%;"/>
+            <img id="cinco" src="img/recursos/enlace5.svg" style="position:absolute; top:273px; left:700px; width:7%;"/>
+            <img id="seis" src="img/recursos/enlace6.svg" style="position:absolute; top:278px; left:800px; width:7%;"/>
+            
+            <img id="espuma6" src="img/proceso/espuma.gif" style=" width:12%; position:absolute; top:446px; left:812px; display:none;"/>
+            <img id="espuma5" src="img/proceso/espuma.gif" style=" width:13%; position:absolute; top:464px; left:726px; display:none;"/>
+            <img id="espuma4" src="img/proceso/espuma.gif" style=" width:14%; position:absolute; top:474px; left:626px; display:none;"/>
+            <img id="espuma3" src="img/proceso/espuma.gif" style=" width:15%; position:absolute; top:491px; left:514px; display:none;"/>
+            <img id="espuma2" src="img/proceso/espuma.gif" style=" width:16%; position:absolute; top:506px; left:381px; display:none;"/>
+            <img id="espuma1" src="img/proceso/espuma.gif" style="position:absolute; top:525px; left:238px; display:none;"/>
+            
+            <a target="_blank" href="http://www.futurenergia.org/ww/es/pub/futurenergia/activity/save_energy.htm">
+            <div id="cuadro1"></div>
+            </a>
+            
+            <a target="_blank" href="http://www.minem.gob.pe/minem/archivos/file/Electricidad/eficiencia%20energetica/recomendaciones%20del%20uso%20racional%20de%20energia.pdf">
+            <div id="cuadro2"></div>
+            </a>
+           
+            <a target="_blank" href="http://www.enbuenasmanos.com/articulos/muestra.asp?art=572"> 
+            <div id="cuadro3"></div>
+            </a>
+            
+            <a target="_blank" href="http://yoahorroenergia.blogspot.com/2011/07/ahorro-energetico-en-el-hogar.html">
+            <div id="cuadro4"></div>
+            </a>
+            
+            <a target="_blank" href="http://twenergy.com/ahorro-energetico">
+            <div id="cuadro5"></div>
+            </a>
+            
+            <a target="_blank" href="http://www.enbuenasmanos.com/articulos/muestra.asp?art=410">
+            <div id="cuadro6"></div>
+            </a>
+            
+            <div id="siguiente4" class="siguiente"></div>
+            <div id="anterior4" class="anterior"></div> 
+            
+            <div id="inicio4" class="inicio"></div>
+        </div>
+        
+        <!------------------------------------------------------------->
+        <!-------------------- FIN DE RECURSOS ------------------------>
+        <!------------------------------------------------------------->
+       
+      
+        <!------------------------------------------------------------->
+        <!--------------------- EVALUACIÓN ---------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena5" class="escena">  
+            <div id="titulo5" class="titulo"></div>
+            <div id="texto5">
+            El producto elaborado será evaluado por el profesor y los compañeros y compañeras. Para ello, deberán llenar 
+            <br>
+            una cartilla de valoración, en la cual cada criterio presenta una escala del 1 al 5, siendo 1 la cifra que representa
+            <br>
+            la menor valoración (deficiente) y 5 la que representa la valoración más alta (excelente). 
+            <br>
+            
+            </div>
+            
+            <div id="tabla">
+            <div id="remolino1" class="remolino brillo"></div>
+            <div id="remolino2" class="remolino brillo"></div>
+            <div id="remolino3" class="remolino brillo"></div>
+            <div id="remolino4" class="remolino brillo"></div>
+            </div>
+            
+            
+            
+            <div id="siguiente5" class="siguiente"></div>
+            <div id="anterior5" class="anterior"></div> 
+            
+            <div id="inicio5" class="inicio"></div>
+        </div>
+        
+        <!------------------------------------------------------------->
+        <!------------------ FIN DE EVALUACIÓN ------------------------>
+        <!------------------------------------------------------------->
+
+        <!------------------------------------------------------------->
+        <!--------------------- CONCLUSIONES -------------------------->
+        <!------------------------------------------------------------->
+        
+        <div id="escena6" class="escena">    
+              <div id="titulo6" class="titulo"></div>
+              <div id="texto6">
+              A través del desarrollo de este proyecto,   
+              <br>
+              hemos podido determinar cuáles son las acciones  
+              <br>
+              que se pueden llevar a cabo  en nuestra localidad     
+              <br>
+              para contribuir al ahorro de la energía eléctrica.   
+              <br>
+              Gracias a ello, reduciremos no solo el gasto 
+              <br>
+              debido al consumo de electricidad en nuestra  
+              <br>
+              ciudad, sino que también ayudaremos a mantener 
+              <br>
+              en buen estado el medioambiente.
+              </div>
+              
+              <div id="circulo" class="brilloo"></div>
+              <img id="foco1" src="img/evaluacion/foco.png" style="position:absolute; top:258px; left:685px; width:12%;" />
+              <img id="foco2" src="img/evaluacion/foco2.png" style=" display:none; position:absolute; top:237px; left:666px; width:16%;" />
+              
+              
+              <div id="siguiente6" class="siguiente"></div>
+            <div id="anterior6" class="anterior"></div> 
+            
+            <div id="inicio6" class="inicio"></div>
+        </div>
+        
+        <!------------------------------------------------------------->
+        <!------------------ FIN DE CONCLUSIONES ---------------------->
+        <!------------------------------------------------------------->
+        
+    </div>
+
+</body>
+</html>
